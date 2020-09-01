@@ -1,0 +1,2291 @@
+2020-08-29 08:39:30.554 [Thread-29] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b55709d: startup date [Fri Aug 28 19:28:58 CST 2020]; root of context hierarchy
+2020-08-29 08:39:30.732 [Thread-29] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-08-29 08:41:18.286 [restartedMain] INFO  sample.SecuritySocialApplication - Starting SecuritySocialApplication on DESKTOP-1UPDKUM with PID 27852 (D:\tiger\code\study\facebook-security5\target\classes started by admin in D:\tiger\code\study\facebook-security5)
+2020-08-29 08:41:18.288 [restartedMain] INFO  sample.SecuritySocialApplication - No active profile set, falling back to default profiles: default
+2020-08-29 08:41:18.369 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a152b2d: startup date [Sat Aug 29 08:41:18 CST 2020]; root of context hierarchy
+2020-08-29 08:41:21.521 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020-08-29 08:41:21.883 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3513 ms
+2020-08-29 08:41:23.311 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-29 08:41:23.312 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-29 08:41:23.312 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-08-29 08:41:23.312 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-08-29 08:41:23.312 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-08-29 08:41:23.312 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2020-08-29 08:41:23.313 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-08-29 08:41:23.313 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-08-29 08:41:23.908 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34157160, org.springframework.security.web.context.SecurityContextPersistenceFilter@187a6467, org.springframework.security.web.header.HeaderWriterFilter@5c2df31c, org.springframework.security.web.csrf.CsrfFilter@53137a99, org.springframework.security.web.authentication.logout.LogoutFilter@45de1181, sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter@50cdd66b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5edb69a6, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@cfdfdd4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f5db9ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52f9504d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@756ba77e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@619ea5b8, org.springframework.security.web.session.SessionManagementFilter@5797cac5, org.springframework.security.web.access.ExceptionTranslationFilter@34fb82e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ed5a03b]
+2020-08-29 08:41:23.910 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2020-08-29 08:41:23.998 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:41:24.159 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a152b2d: startup date [Sat Aug 29 08:41:18 CST 2020]; root of context hierarchy
+2020-08-29 08:41:24.226 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String sample.HomeController.home(org.springframework.ui.Model)
+2020-08-29 08:41:24.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-08-29 08:41:24.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:41:24.261 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:41:24.261 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:41:24.785 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-29 08:41:24.798 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-29 08:41:24.812 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:41:24.813 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:41:24.814 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:41:24.870 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-08-29 08:41:24.926 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2020-08-29 08:41:24.930 [restartedMain] INFO  sample.SecuritySocialApplication - Started SecuritySocialApplication in 7.864 seconds (JVM running for 11.273)
+2020-08-29 08:41:25.148 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-29 08:41:25.164 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2020-08-29 08:41:33.438 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/wechatmp':
+
+org.apache.catalina.connector.RequestFacade@7c51a100
+
+servletPath:/oauth2/authorization/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=45AAA878222A4201E12EA1066566ED61
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:41:33.469 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+New HTTP session created: C765E22652C4E8C60A350B8F99F2719A
+
+Call stack: 
+
+	at org.springframework.security.web.debug.Logger.info(Logger.java:44)
+	at org.springframework.security.web.debug.DebugRequestWrapper.getSession(DebugFilter.java:166)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
+	at org.springframework.security.oauth2.client.web.HttpSessionOAuth2AuthorizationRequestRepository.saveAuthorizationRequest(HttpSessionOAuth2AuthorizationRequestRepository.java:58)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.sendRedirectForAuthorization(WxOAuth2AuthorizationRequestRedirectFilter.java:159)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.doFilterInternal(WxOAuth2AuthorizationRequestRedirectFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+************************************************************
+
+
+2020-08-29 08:41:33.478 [http-nio-80-exec-1] INFO  s.a.o.WxOAuth2AuthorizationRequestRedirectFilter - redirectUri:https://open.weixin.qq.com/connect/oauth2/authorize?response_type=code&appid=wx1337188be8d65db4&scope=snsapi_userinfo&state=3_NObFIamPGxXnet6jEAh_E8l8TwRyxMIvTEQPUgpRo%3D&redirect_uri=http://www.yunxiangfu.life/login/oauth2/code/wechatmp
+2020-08-29 08:41:36.560 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=011zZj000z3wbK1La8000fNnIa1zZj0H&state=3_NObFIamPGxXnet6jEAh_E8l8TwRyxMIvTEQPUgpRo%3D':
+
+org.apache.catalina.connector.RequestFacade@7c51a100
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:41:36.564 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - in WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse .......................... 
+2020-08-29 08:41:36.606 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenRequest: {"wxAuthzGrant":{"code":{"value":"011zZj000z3wbK1La8000fNnIa1zZj0H"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"authzGrant":{"code":{"value":"011zZj000z3wbK1La8000fNnIa1zZj0H"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"customParams":{},"clientAuth":{"secret":{"value":[48,99,98,49,51,51,101,54,51,100,102,48,48,49,48,99,56,49,99,98,50,97,51,49,54,99,98,101,51,55,48,55]},"method":{"value":"client_secret_post"},"clientID":{"value":"wx1337188be8d65db4"}},"uri":"https://api.weixin.qq.com/sns/oauth2/access_token"}
+2020-08-29 08:41:36.606 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - to WxTokenRequest.toHTTPRequest .............. 
+2020-08-29 08:41:36.791 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"client_secret":"0cb133e63df0010c81cb2a316cbe3707","client_id":"wx1337188be8d65db4"}
+2020-08-29 08:41:36.792 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"011zZj000z3wbK1La8000fNnIa1zZj0H","grant_type":"authorization_code","client_secret":"0cb133e63df0010c81cb2a316cbe3707","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","client_id":"wx1337188be8d65db4"}
+2020-08-29 08:41:36.792 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"011zZj000z3wbK1La8000fNnIa1zZj0H","grant_type":"authorization_code","appid":"wx1337188be8d65db4","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","secret":"0cb133e63df0010c81cb2a316cbe3707"}
+2020-08-29 08:41:36.795 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpRequest: {"method":"POST","url":"https://api.weixin.qq.com/sns/oauth2/access_token","query":"code\u003d011zZj000z3wbK1La8000fNnIa1zZj0H\u0026grant_type\u003dauthorization_code\u0026appid\u003dwx1337188be8d65db4\u0026redirect_uri\u003dhttp%3A%2F%2Fwww.yunxiangfu.life%2Flogin%2Foauth2%2Fcode%2Fwechatmp\u0026secret\u003d0cb133e63df0010c81cb2a316cbe3707","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{"Content-Type":"application/x-www-form-urlencoded; charset\u003dUTF-8"}}
+2020-08-29 08:41:37.485 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw\",\"expires_in\":7200,\"refresh_token\":\"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:44:33 GMT"}}
+2020-08-29 08:41:37.489 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(HTTPResponse) ................. {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw\",\"expires_in\":7200,\"refresh_token\":\"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:44:33 GMT"}}
+2020-08-29 08:41:37.527 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - jsonObject:{"access_token":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","refresh_token":"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:41:37.528 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(JSONObject) ................. {"access_token":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","refresh_token":"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:41:37.534 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxTokens.parse:{"access_token":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","refresh_token":"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:41:37.534 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxAccessToken.parse:{"access_token":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","refresh_token":"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:41:37.535 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessTokenValue:36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw
+2020-08-29 08:41:37.536 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessToken:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw"}
+2020-08-29 08:41:37.536 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - refreshToken:{"value":"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA"}
+2020-08-29 08:41:37.537 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw\",\"expires_in\":7200,\"refresh_token\":\"36_7PDuqAXIAO0OhDMySTxeSvw2eH7vcYImp2QpBgOyXMI6urg_kNcNGK9BPywLlIISaBDOXnkLhmbnAe1xF6tZBA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:44:33 GMT"}}
+2020-08-29 08:41:37.537 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - wxAccessToken: {"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw"}
+2020-08-29 08:41:37.541 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - out WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse:{"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","issuedAt":{"seconds":1598661697,"nanos":540000000},"expiresAt":{"seconds":1598668897,"nanos":540000000}},"additionalParameters":{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4"}}
+2020-08-29 08:41:37.543 [http-nio-80-exec-2] INFO  sample.api.oauth.WxOAuth2UserService - WxOAuth2UserService.loadUser:{"clientRegistration":{"registrationId":"wechatmp","clientId":"wx1337188be8d65db4","clientSecret":"0cb133e63df0010c81cb2a316cbe3707","clientAuthenticationMethod":{"value":"post"},"authorizationGrantType":{"value":"authorization_code"},"redirectUriTemplate":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","scopes":["snsapi_userinfo"],"providerDetails":{"authorizationUri":"https://open.weixin.qq.com/connect/oauth2/authorize","tokenUri":"https://api.weixin.qq.com/sns/oauth2/access_token","userInfoEndpoint":{"uri":"https://api.weixin.qq.com/sns/userinfo","userNameAttributeName":"openid"},"jwkSetUri":""},"clientName":"wx"},"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw","issuedAt":{"seconds":1598661697,"nanos":540000000},"expiresAt":{"seconds":1598668897,"nanos":540000000}}}
+2020-08-29 08:41:37.550 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.userInfoRequest:{"httpMethod":"GET","accessToken":{"type":{"value":"Bearer"},"lifetime":0,"value":"36_HYtoJirsz3W0Ps5_6FD9aii8qeRsKd6ov05TCfT2301Bebf_LRwt7dxH8OlnjqoiVj4Sfs_kSUQWeHU1GxTSqw"},"uri":"https://api.weixin.qq.com/sns/userinfo"}
+2020-08-29 08:41:37.554 [http-nio-80-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.ClassCastException: com.nimbusds.oauth2.sdk.token.BearerAccessToken cannot be cast to sample.api.oauth.WxAccessToken
+	at sample.api.oauth.WxUserInfoRequest.toHTTPRequest(WxUserInfoRequest.java:38)
+	at sample.api.oauth.WxNimbusUserInfoResponseClient.getUserInfoResponse(WxNimbusUserInfoResponseClient.java:79)
+	at sample.api.oauth.WxNimbusUserInfoResponseClient.getUserInfoResponse(WxNimbusUserInfoResponseClient.java:61)
+	at sample.api.oauth.WxOAuth2UserService.loadUser(WxOAuth2UserService.java:62)
+	at org.springframework.security.oauth2.client.authentication.OAuth2LoginAuthenticationProvider.authenticate(OAuth2LoginAuthenticationProvider.java:128)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter.attemptAuthentication(OAuth2LoginAuthenticationFilter.java:164)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.doFilterInternal(WxOAuth2AuthorizationRequestRedirectFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-08-29 08:41:37.583 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/error?code=011zZj000z3wbK1La8000fNnIa1zZj0H&state=3_NObFIamPGxXnet6jEAh_E8l8TwRyxMIvTEQPUgpRo%3D':
+
+org.apache.catalina.core.ApplicationHttpRequest@12ddafa3
+
+servletPath:/error
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:41:37.629 [http-nio-80-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@7c51a100
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:41:37.770 [http-nio-80-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/favicon.ico':
+
+org.apache.catalina.connector.RequestFacade@7c51a100
+
+servletPath:/favicon.ico
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: image/webp,image/apng,image/*,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:41:37.783 [http-nio-80-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@7c51a100
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: image/webp,image/apng,image/*,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:26.915 [Thread-27] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a152b2d: startup date [Sat Aug 29 08:41:18 CST 2020]; root of context hierarchy
+2020-08-29 08:50:26.924 [Thread-27] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-08-29 08:50:39.797 [restartedMain] INFO  sample.SecuritySocialApplication - Starting SecuritySocialApplication on DESKTOP-1UPDKUM with PID 25688 (D:\tiger\code\study\facebook-security5\target\classes started by admin in D:\tiger\code\study\facebook-security5)
+2020-08-29 08:50:39.798 [restartedMain] INFO  sample.SecuritySocialApplication - No active profile set, falling back to default profiles: default
+2020-08-29 08:50:39.864 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71e7c92: startup date [Sat Aug 29 08:50:39 CST 2020]; root of context hierarchy
+2020-08-29 08:50:42.391 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020-08-29 08:50:42.775 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2911 ms
+2020-08-29 08:50:44.237 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-29 08:50:44.238 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-29 08:50:44.238 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-08-29 08:50:44.238 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-08-29 08:50:44.239 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-08-29 08:50:44.239 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2020-08-29 08:50:44.239 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-08-29 08:50:44.239 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-08-29 08:50:44.825 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22ef7ac1, org.springframework.security.web.context.SecurityContextPersistenceFilter@46683c1a, org.springframework.security.web.header.HeaderWriterFilter@62886a25, org.springframework.security.web.csrf.CsrfFilter@2e81a780, org.springframework.security.web.authentication.logout.LogoutFilter@60d0eb6e, sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter@4fd6c4f1, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@a2e9715, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6678e8e1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@790a8810, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c6d755a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@83ce7f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@637eea6e, org.springframework.security.web.session.SessionManagementFilter@5251b3f7, org.springframework.security.web.access.ExceptionTranslationFilter@443eec93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45e3cffb]
+2020-08-29 08:50:44.827 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2020-08-29 08:50:44.923 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:50:45.098 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71e7c92: startup date [Sat Aug 29 08:50:39 CST 2020]; root of context hierarchy
+2020-08-29 08:50:45.157 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String sample.HomeController.home(org.springframework.ui.Model)
+2020-08-29 08:50:45.161 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-08-29 08:50:45.161 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:50:45.190 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:50:45.191 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:50:45.649 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-29 08:50:45.663 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-29 08:50:45.676 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:50:45.677 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:50:45.678 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:50:45.732 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-08-29 08:50:45.787 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2020-08-29 08:50:45.791 [restartedMain] INFO  sample.SecuritySocialApplication - Started SecuritySocialApplication in 6.761 seconds (JVM running for 9.546)
+2020-08-29 08:50:46.297 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-29 08:50:46.324 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2020-08-29 08:50:53.272 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/wechatmp':
+
+org.apache.catalina.connector.RequestFacade@beca29f
+
+servletPath:/oauth2/authorization/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:53.293 [http-nio-80-exec-1] INFO  s.a.o.WxOAuth2AuthorizationRequestRedirectFilter - redirectUri:https://open.weixin.qq.com/connect/oauth2/authorize?response_type=code&appid=wx1337188be8d65db4&scope=snsapi_userinfo&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D&redirect_uri=http://www.yunxiangfu.life/login/oauth2/code/wechatmp
+2020-08-29 08:50:56.205 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=001Pyk000oMwbK1OvR200FnCaM1Pyk0m&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D':
+
+org.apache.catalina.connector.RequestFacade@beca29f
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:56.209 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - in WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse .......................... 
+2020-08-29 08:50:56.247 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenRequest: {"wxAuthzGrant":{"code":{"value":"001Pyk000oMwbK1OvR200FnCaM1Pyk0m"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"authzGrant":{"code":{"value":"001Pyk000oMwbK1OvR200FnCaM1Pyk0m"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"customParams":{},"clientAuth":{"secret":{"value":[48,99,98,49,51,51,101,54,51,100,102,48,48,49,48,99,56,49,99,98,50,97,51,49,54,99,98,101,51,55,48,55]},"method":{"value":"client_secret_post"},"clientID":{"value":"wx1337188be8d65db4"}},"uri":"https://api.weixin.qq.com/sns/oauth2/access_token"}
+2020-08-29 08:50:56.247 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - to WxTokenRequest.toHTTPRequest .............. 
+2020-08-29 08:50:56.392 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"client_secret":"0cb133e63df0010c81cb2a316cbe3707","client_id":"wx1337188be8d65db4"}
+2020-08-29 08:50:56.392 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"001Pyk000oMwbK1OvR200FnCaM1Pyk0m","grant_type":"authorization_code","client_secret":"0cb133e63df0010c81cb2a316cbe3707","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","client_id":"wx1337188be8d65db4"}
+2020-08-29 08:50:56.392 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"001Pyk000oMwbK1OvR200FnCaM1Pyk0m","grant_type":"authorization_code","appid":"wx1337188be8d65db4","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","secret":"0cb133e63df0010c81cb2a316cbe3707"}
+2020-08-29 08:50:56.395 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpRequest: {"method":"POST","url":"https://api.weixin.qq.com/sns/oauth2/access_token","query":"code\u003d001Pyk000oMwbK1OvR200FnCaM1Pyk0m\u0026grant_type\u003dauthorization_code\u0026appid\u003dwx1337188be8d65db4\u0026redirect_uri\u003dhttp%3A%2F%2Fwww.yunxiangfu.life%2Flogin%2Foauth2%2Fcode%2Fwechatmp\u0026secret\u003d0cb133e63df0010c81cb2a316cbe3707","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{"Content-Type":"application/x-www-form-urlencoded; charset\u003dUTF-8"}}
+2020-08-29 08:50:56.969 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ\",\"expires_in\":7200,\"refresh_token\":\"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:53:52 GMT"}}
+2020-08-29 08:50:56.973 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(HTTPResponse) ................. {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ\",\"expires_in\":7200,\"refresh_token\":\"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:53:52 GMT"}}
+2020-08-29 08:50:56.994 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - jsonObject:{"access_token":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","refresh_token":"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:50:56.994 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(JSONObject) ................. {"access_token":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","refresh_token":"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:50:57.000 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxTokens.parse:{"access_token":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","refresh_token":"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:50:57.000 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxAccessToken.parse:{"access_token":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","refresh_token":"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 08:50:57.000 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessTokenValue:36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ
+2020-08-29 08:50:57.001 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessToken:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ"}
+2020-08-29 08:50:57.002 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - refreshToken:{"value":"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA"}
+2020-08-29 08:50:57.003 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ\",\"expires_in\":7200,\"refresh_token\":\"36_6wEplXPrx2OQuJWtdNDnH_NVABj24h87hM-_ifm70eKn_RpYTJci4WfNHu_EDZWMS08QiBlL731oN49OT-qehA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:53:52 GMT"}}
+2020-08-29 08:50:57.003 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - wxAccessToken: {"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ"}
+2020-08-29 08:50:57.007 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - out WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse:{"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","issuedAt":{"seconds":1598662257,"nanos":6000000},"expiresAt":{"seconds":1598669457,"nanos":6000000}},"additionalParameters":{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4"}}
+2020-08-29 08:50:57.009 [http-nio-80-exec-2] INFO  sample.api.oauth.WxOAuth2UserService - WxOAuth2UserService.loadUser:{"clientRegistration":{"registrationId":"wechatmp","clientId":"wx1337188be8d65db4","clientSecret":"0cb133e63df0010c81cb2a316cbe3707","clientAuthenticationMethod":{"value":"post"},"authorizationGrantType":{"value":"authorization_code"},"redirectUriTemplate":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","scopes":["snsapi_userinfo"],"providerDetails":{"authorizationUri":"https://open.weixin.qq.com/connect/oauth2/authorize","tokenUri":"https://api.weixin.qq.com/sns/oauth2/access_token","userInfoEndpoint":{"uri":"https://api.weixin.qq.com/sns/userinfo","userNameAttributeName":"openid"},"jwkSetUri":""},"clientName":"wx"},"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ","issuedAt":{"seconds":1598662257,"nanos":6000000},"expiresAt":{"seconds":1598669457,"nanos":6000000}}}
+2020-08-29 08:50:57.015 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.userInfoRequest:{"httpMethod":"GET","accessToken":{"type":{"value":"Bearer"},"lifetime":0,"value":"36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ"},"uri":"https://api.weixin.qq.com/sns/userinfo"}
+2020-08-29 08:50:57.016 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpRequest:{"method":"GET","url":"https://api.weixin.qq.com/sns/userinfo","query":"access_token\u003d36_vZXKog0Ce_cH7tJRQmYSeOgpCh84wt797rwXaZm1jrkihYFOXS_aAXQ31d9HW2V10Sdd-QG7em99Hi6ndQO_pQ\u0026lang\u003dzh_CN","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{}}
+2020-08-29 08:50:57.160 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpResponse:{"statusCode":200,"statusMessage":"OK","content":"{\"errcode\":41009,\"errmsg\":\"missing openid, hints: [ req_id: 0DoDn2Dae-I.N8UA ]\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"80","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 00:53:52 GMT"}}
+2020-08-29 08:50:57.201 [http-nio-80-exec-2] INFO  sample.api.oauth.WxOAuth2UserService - userAttributes:{"errcode":41009,"errmsg":"missing openid, hints: [ req_id: 0DoDn2Dae-I.N8UA ]"}
+2020-08-29 08:50:57.207 [http-nio-80-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: Missing attribute 'openid' in attributes
+	at org.springframework.security.oauth2.core.user.DefaultOAuth2User.<init>(DefaultOAuth2User.java:67)
+	at sample.api.oauth.WxOAuth2UserService.loadUser(WxOAuth2UserService.java:68)
+	at sample.api.oauth.WxOAuth2LoginAuthenticationProvider.authenticate(WxOAuth2LoginAuthenticationProvider.java:96)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter.attemptAuthentication(OAuth2LoginAuthenticationFilter.java:164)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.doFilterInternal(WxOAuth2AuthorizationRequestRedirectFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-08-29 08:50:57.217 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/error?code=001Pyk000oMwbK1OvR200FnCaM1Pyk0m&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D':
+
+org.apache.catalina.core.ApplicationHttpRequest@47e4bdea
+
+servletPath:/error
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:57.265 [http-nio-80-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@beca29f
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:57.363 [http-nio-80-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/favicon.ico':
+
+org.apache.catalina.connector.RequestFacade@beca29f
+
+servletPath:/favicon.ico
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: image/webp,image/apng,image/*,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:50:57.370 [http-nio-80-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@beca29f
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: image/webp,image/apng,image/*,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:57:38.243 [Thread-26] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71e7c92: startup date [Sat Aug 29 08:50:39 CST 2020]; root of context hierarchy
+2020-08-29 08:57:38.250 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-08-29 08:59:46.116 [restartedMain] INFO  sample.SecuritySocialApplication - Starting SecuritySocialApplication on DESKTOP-1UPDKUM with PID 9928 (D:\tiger\code\study\facebook-security5\target\classes started by admin in D:\tiger\code\study\facebook-security5)
+2020-08-29 08:59:46.118 [restartedMain] INFO  sample.SecuritySocialApplication - No active profile set, falling back to default profiles: default
+2020-08-29 08:59:46.170 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cf6f1d3: startup date [Sat Aug 29 08:59:46 CST 2020]; root of context hierarchy
+2020-08-29 08:59:48.260 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020-08-29 08:59:48.652 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2482 ms
+2020-08-29 08:59:50.277 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-29 08:59:50.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-08-29 08:59:50.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-08-29 08:59:50.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-08-29 08:59:50.278 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-08-29 08:59:50.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2020-08-29 08:59:50.279 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-08-29 08:59:50.279 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-08-29 08:59:50.842 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6323f657, org.springframework.security.web.context.SecurityContextPersistenceFilter@52d9c952, org.springframework.security.web.header.HeaderWriterFilter@86c5e33, org.springframework.security.web.csrf.CsrfFilter@645c310b, org.springframework.security.web.authentication.logout.LogoutFilter@5d41670, sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter@20665769, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2c01118d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@472c0eb6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@140c876e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a101009, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e4aff7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@785b725c, org.springframework.security.web.session.SessionManagementFilter@6284b3f3, org.springframework.security.web.access.ExceptionTranslationFilter@2922fa5b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51970881]
+2020-08-29 08:59:50.844 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2020-08-29 08:59:50.943 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:59:51.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cf6f1d3: startup date [Sat Aug 29 08:59:46 CST 2020]; root of context hierarchy
+2020-08-29 08:59:51.204 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String sample.HomeController.home(org.springframework.ui.Model)
+2020-08-29 08:59:51.208 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-08-29 08:59:51.208 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:59:51.252 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:59:51.253 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-29 08:59:51.746 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-29 08:59:51.762 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-29 08:59:51.776 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:59:51.777 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-08-29 08:59:51.778 [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-29 08:59:51.838 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-08-29 08:59:51.899 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2020-08-29 08:59:51.903 [restartedMain] INFO  sample.SecuritySocialApplication - Started SecuritySocialApplication in 6.416 seconds (JVM running for 9.42)
+2020-08-29 08:59:52.333 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-29 08:59:52.350 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2020-08-29 08:59:59.837 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/wechatmp':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/oauth2/authorization/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 08:59:59.861 [http-nio-80-exec-1] INFO  s.a.o.WxOAuth2AuthorizationRequestRedirectFilter - redirectUri:https://open.weixin.qq.com/connect/oauth2/authorize?response_type=code&appid=wx1337188be8d65db4&scope=snsapi_userinfo&state=HMxHQHRuK9Ykkvda9f8jEI_3Ow6nzodndISqAkbt24Q%3D&redirect_uri=http://www.yunxiangfu.life/login/oauth2/code/wechatmp
+2020-08-29 09:00:02.662 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=081kdT000mV4cK1gOu000ozO200kdT0v&state=HMxHQHRuK9Ykkvda9f8jEI_3Ow6nzodndISqAkbt24Q%3D':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=C765E22652C4E8C60A350B8F99F2719A
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:00:02.666 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - in WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse .......................... 
+2020-08-29 09:00:02.701 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenRequest: {"wxAuthzGrant":{"code":{"value":"081kdT000mV4cK1gOu000ozO200kdT0v"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"authzGrant":{"code":{"value":"081kdT000mV4cK1gOu000ozO200kdT0v"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"customParams":{},"clientAuth":{"secret":{"value":[48,99,98,49,51,51,101,54,51,100,102,48,48,49,48,99,56,49,99,98,50,97,51,49,54,99,98,101,51,55,48,55]},"method":{"value":"client_secret_post"},"clientID":{"value":"wx1337188be8d65db4"}},"uri":"https://api.weixin.qq.com/sns/oauth2/access_token"}
+2020-08-29 09:00:02.701 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - to WxTokenRequest.toHTTPRequest .............. 
+2020-08-29 09:00:02.762 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"client_secret":"0cb133e63df0010c81cb2a316cbe3707","client_id":"wx1337188be8d65db4"}
+2020-08-29 09:00:02.763 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"081kdT000mV4cK1gOu000ozO200kdT0v","grant_type":"authorization_code","client_secret":"0cb133e63df0010c81cb2a316cbe3707","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","client_id":"wx1337188be8d65db4"}
+2020-08-29 09:00:02.763 [http-nio-80-exec-2] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"081kdT000mV4cK1gOu000ozO200kdT0v","grant_type":"authorization_code","appid":"wx1337188be8d65db4","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","secret":"0cb133e63df0010c81cb2a316cbe3707"}
+2020-08-29 09:00:02.765 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpRequest: {"method":"POST","url":"https://api.weixin.qq.com/sns/oauth2/access_token","query":"code\u003d081kdT000mV4cK1gOu000ozO200kdT0v\u0026grant_type\u003dauthorization_code\u0026appid\u003dwx1337188be8d65db4\u0026redirect_uri\u003dhttp%3A%2F%2Fwww.yunxiangfu.life%2Flogin%2Foauth2%2Fcode%2Fwechatmp\u0026secret\u003d0cb133e63df0010c81cb2a316cbe3707","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{"Content-Type":"application/x-www-form-urlencoded; charset\u003dUTF-8"}}
+2020-08-29 09:00:03.211 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ\",\"expires_in\":7200,\"refresh_token\":\"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:02:58 GMT"}}
+2020-08-29 09:00:03.215 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(HTTPResponse) ................. {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ\",\"expires_in\":7200,\"refresh_token\":\"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:02:58 GMT"}}
+2020-08-29 09:00:03.236 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - jsonObject:{"access_token":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","refresh_token":"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:00:03.236 [http-nio-80-exec-2] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(JSONObject) ................. {"access_token":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","refresh_token":"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:00:03.242 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxTokens.parse:{"access_token":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","refresh_token":"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:00:03.243 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - WxAccessToken.parse:{"access_token":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","refresh_token":"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:00:03.243 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessTokenValue:36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ
+2020-08-29 09:00:03.244 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - accessToken:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ"}
+2020-08-29 09:00:03.244 [http-nio-80-exec-2] INFO  sample.api.oauth.WxAccessToken - refreshToken:{"value":"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg"}
+2020-08-29 09:00:03.245 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ\",\"expires_in\":7200,\"refresh_token\":\"36_Fmqsi1P4-6hpv4D3KwEIrEwuCdc_fI6RLlJmSWrfoCl5UObb2vLJSlrtSerq2QCZ5ehOYZlrMCy-M6WkWr5pBg\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:02:58 GMT"}}
+2020-08-29 09:00:03.245 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - wxAccessToken: {"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ"}
+2020-08-29 09:00:03.248 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - out WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse:{"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","issuedAt":{"seconds":1598662803,"nanos":247000000},"expiresAt":{"seconds":1598670003,"nanos":247000000}},"additionalParameters":{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4"}}
+2020-08-29 09:00:03.252 [http-nio-80-exec-2] INFO  sample.api.oauth.WxOAuth2UserService - WxOAuth2UserService.loadUser:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","clientRegistration":{"registrationId":"wechatmp","clientId":"wx1337188be8d65db4","clientSecret":"0cb133e63df0010c81cb2a316cbe3707","clientAuthenticationMethod":{"value":"post"},"authorizationGrantType":{"value":"authorization_code"},"redirectUriTemplate":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","scopes":["snsapi_userinfo"],"providerDetails":{"authorizationUri":"https://open.weixin.qq.com/connect/oauth2/authorize","tokenUri":"https://api.weixin.qq.com/sns/oauth2/access_token","userInfoEndpoint":{"uri":"https://api.weixin.qq.com/sns/userinfo","userNameAttributeName":"openid"},"jwkSetUri":""},"clientName":"wx"},"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ","issuedAt":{"seconds":1598662803,"nanos":247000000},"expiresAt":{"seconds":1598670003,"nanos":247000000}}}
+2020-08-29 09:00:03.258 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.userInfoRequest:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","httpMethod":"GET","accessToken":{"type":{"value":"Bearer"},"lifetime":0,"value":"36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ"},"uri":"https://api.weixin.qq.com/sns/userinfo"}
+2020-08-29 09:00:03.258 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpRequest:{"method":"GET","url":"https://api.weixin.qq.com/sns/userinfo","query":"access_token\u003d36_cUb2kKeR-FoHz2DOkMQmYm059ON5uqMX39wQ69zl_cr5yg3ijkxQTK4PcMvD1eSiPwqmTh0S1BubU1yfTqn7eQ\u0026openid\u003domWy-1AVHaKjKdUMPUCoi22xg8B4\u0026lang\u003dzh_CN","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{}}
+2020-08-29 09:00:03.431 [http-nio-80-exec-2] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpResponse:{"statusCode":200,"statusMessage":"OK","content":"{\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"nickname\":\"桑骏\",\"sex\":1,\"language\":\"zh_CN\",\"city\":\"卢湾\",\"province\":\"上海\",\"country\":\"中国\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/yvtKBMDQ1V9EEoTLpBsibdic1c4OUUW8RSdW2uyMrobLautfFspiatNByaFfy8YOhz4djWlNafiaXFeYd4xoDz5G0A\\/132\",\"privilege\":[]}\r\n","headers":{"Connection":"keep-alive","Content-Length":"311","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:02:58 GMT"}}
+2020-08-29 09:00:03.449 [http-nio-80-exec-2] INFO  sample.api.oauth.WxOAuth2UserService - userAttributes:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","nickname":"桑骏","sex":1,"language":"zh_CN","city":"卢湾","province":"上海","country":"中国","headimgurl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yvtKBMDQ1V9EEoTLpBsibdic1c4OUUW8RSdW2uyMrobLautfFspiatNByaFfy8YOhz4djWlNafiaXFeYd4xoDz5G0A/132","privilege":[]}
+2020-08-29 09:00:03.483 [http-nio-80-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/error?code=001Pyk000oMwbK1OvR200FnCaM1Pyk0m&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/error
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:00:03.923 [http-nio-80-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/favicon.ico':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/favicon.ico
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: image/webp,image/apng,image/*,*/*;q=0.8
+referer: http://www.yunxiangfu.life/error?code=001Pyk000oMwbK1OvR200FnCaM1Pyk0m&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:22:45.714 [http-nio-80-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=081kdT000mV4cK1gOu000ozO200kdT0v&state=HMxHQHRuK9Ykkvda9f8jEI_3Ow6nzodndISqAkbt24Q%3D':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:22:45.742 [http-nio-80-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login?error':
+
+org.apache.catalina.connector.RequestFacade@54e87fb1
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:28.339 [http-nio-80-exec-8] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@1a4ed2ce
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:28.340 [http-nio-80-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@53113c09
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:28.341 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=011zZj000z3wbK1La8000fNnIa1zZj0H&state=3_NObFIamPGxXnet6jEAh_E8l8TwRyxMIvTEQPUgpRo%3D':
+
+org.apache.catalina.connector.RequestFacade@25fd1ca
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:28.374 [http-nio-80-exec-10] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=001Pyk000oMwbK1OvR200FnCaM1Pyk0m&state=VRpULfhfbwLuCFavVmPMpOr4yFyU12pCFK_-2dANfHI%3D':
+
+org.apache.catalina.connector.RequestFacade@7012df23
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:29.851 [http-nio-80-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@7e0e962b
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:29.851 [http-nio-80-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:42.854 [http-nio-80-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/wechatmp':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/oauth2/authorization/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+referer: http://www.yunxiangfu.life/login
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:42.855 [http-nio-80-exec-4] INFO  s.a.o.WxOAuth2AuthorizationRequestRedirectFilter - redirectUri:https://open.weixin.qq.com/connect/oauth2/authorize?response_type=code&appid=wx1337188be8d65db4&scope=snsapi_userinfo&state=3BYxnw-pB-AAPlSRwhntqhCTCtBVOUTf_snFC8seuGU%3D&redirect_uri=http://www.yunxiangfu.life/login/oauth2/code/wechatmp
+2020-08-29 09:23:45.442 [http-nio-80-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/wechatmp?code=001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ&state=3BYxnw-pB-AAPlSRwhntqhCTCtBVOUTf_snFC8seuGU%3D':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/login/oauth2/code/wechatmp
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=76AF5344EE588CC5AB4DB776C76AC129
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:23:45.443 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - in WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse .......................... 
+2020-08-29 09:23:45.444 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenRequest: {"wxAuthzGrant":{"code":{"value":"001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"authzGrant":{"code":{"value":"001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ"},"redirectURI":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"customParams":{},"clientAuth":{"secret":{"value":[48,99,98,49,51,51,101,54,51,100,102,48,48,49,48,99,56,49,99,98,50,97,51,49,54,99,98,101,51,55,48,55]},"method":{"value":"client_secret_post"},"clientID":{"value":"wx1337188be8d65db4"}},"uri":"https://api.weixin.qq.com/sns/oauth2/access_token"}
+2020-08-29 09:23:45.445 [http-nio-80-exec-5] INFO  sample.api.oauth.WxTokenRequest - to WxTokenRequest.toHTTPRequest .............. 
+2020-08-29 09:23:45.445 [http-nio-80-exec-5] INFO  sample.api.oauth.WxTokenRequest - params: {"client_secret":"0cb133e63df0010c81cb2a316cbe3707","client_id":"wx1337188be8d65db4"}
+2020-08-29 09:23:45.445 [http-nio-80-exec-5] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ","grant_type":"authorization_code","client_secret":"0cb133e63df0010c81cb2a316cbe3707","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","client_id":"wx1337188be8d65db4"}
+2020-08-29 09:23:45.445 [http-nio-80-exec-5] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ","grant_type":"authorization_code","appid":"wx1337188be8d65db4","redirect_uri":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","secret":"0cb133e63df0010c81cb2a316cbe3707"}
+2020-08-29 09:23:45.446 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpRequest: {"method":"POST","url":"https://api.weixin.qq.com/sns/oauth2/access_token","query":"code\u003d001tXdGa1lxSwz0v85Ja1LqbGE2tXdGQ\u0026grant_type\u003dauthorization_code\u0026appid\u003dwx1337188be8d65db4\u0026redirect_uri\u003dhttp%3A%2F%2Fwww.yunxiangfu.life%2Flogin%2Foauth2%2Fcode%2Fwechatmp\u0026secret\u003d0cb133e63df0010c81cb2a316cbe3707","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{"Content-Type":"application/x-www-form-urlencoded; charset\u003dUTF-8"}}
+2020-08-29 09:23:45.941 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ\",\"expires_in\":7200,\"refresh_token\":\"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:26:41 GMT"}}
+2020-08-29 09:23:45.941 [http-nio-80-exec-5] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(HTTPResponse) ................. {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ\",\"expires_in\":7200,\"refresh_token\":\"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:26:41 GMT"}}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  s.api.oauth.WxAccessTokenResponse - jsonObject:{"access_token":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","refresh_token":"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(JSONObject) ................. {"access_token":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","refresh_token":"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  sample.api.oauth.WxAccessToken - WxTokens.parse:{"access_token":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","refresh_token":"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  sample.api.oauth.WxAccessToken - WxAccessToken.parse:{"access_token":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","refresh_token":"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA","openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","scope":"snsapi_userinfo","expires_in":7200}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  sample.api.oauth.WxAccessToken - accessTokenValue:36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  sample.api.oauth.WxAccessToken - accessToken:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ"}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  sample.api.oauth.WxAccessToken - refreshToken:{"value":"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA"}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ\",\"expires_in\":7200,\"refresh_token\":\"36_xWc3rV4c78Y2aSLS-QPLNNKEnNc9H17f4nuHk6Z1Tux8pJlT8StBV5USJ-RVdpYua4QDO2wp-T9bHmosdsSTnA\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:26:41 GMT"}}
+2020-08-29 09:23:45.942 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - wxAccessToken: {"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","type":{"value":"Bearer"},"lifetime":7200,"scope":[{"value":"snsapi_userinfo"}],"value":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ"}
+2020-08-29 09:23:45.943 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - out WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse:{"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","issuedAt":{"seconds":1598664225,"nanos":942000000},"expiresAt":{"seconds":1598671425,"nanos":942000000}},"additionalParameters":{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4"}}
+2020-08-29 09:23:45.943 [http-nio-80-exec-5] INFO  sample.api.oauth.WxOAuth2UserService - WxOAuth2UserService.loadUser:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","clientRegistration":{"registrationId":"wechatmp","clientId":"wx1337188be8d65db4","clientSecret":"0cb133e63df0010c81cb2a316cbe3707","clientAuthenticationMethod":{"value":"post"},"authorizationGrantType":{"value":"authorization_code"},"redirectUriTemplate":"http://www.yunxiangfu.life/login/oauth2/code/wechatmp","scopes":["snsapi_userinfo"],"providerDetails":{"authorizationUri":"https://open.weixin.qq.com/connect/oauth2/authorize","tokenUri":"https://api.weixin.qq.com/sns/oauth2/access_token","userInfoEndpoint":{"uri":"https://api.weixin.qq.com/sns/userinfo","userNameAttributeName":"openid"},"jwkSetUri":""},"clientName":"wx"},"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["snsapi_userinfo"],"tokenValue":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ","issuedAt":{"seconds":1598664225,"nanos":942000000},"expiresAt":{"seconds":1598671425,"nanos":942000000}}}
+2020-08-29 09:23:45.943 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.userInfoRequest:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","httpMethod":"GET","accessToken":{"type":{"value":"Bearer"},"lifetime":0,"value":"36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ"},"uri":"https://api.weixin.qq.com/sns/userinfo"}
+2020-08-29 09:23:45.943 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpRequest:{"method":"GET","url":"https://api.weixin.qq.com/sns/userinfo","query":"access_token\u003d36_wNm-RBvnFB-cNCAe0XsHlfN7RGlxkwwfT_58i4x0Y17u7iXRZ-HHV1FNbo8QXIBiSM8mGfuiaQ_khPq7Tg8BvQ\u0026openid\u003domWy-1AVHaKjKdUMPUCoi22xg8B4\u0026lang\u003dzh_CN","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{}}
+2020-08-29 09:23:46.121 [http-nio-80-exec-5] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpResponse:{"statusCode":200,"statusMessage":"OK","content":"{\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"nickname\":\"桑骏\",\"sex\":1,\"language\":\"zh_CN\",\"city\":\"卢湾\",\"province\":\"上海\",\"country\":\"中国\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/yvtKBMDQ1V9EEoTLpBsibdic1c4OUUW8RSdW2uyMrobLautfFspiatNByaFfy8YOhz4djWlNafiaXFeYd4xoDz5G0A\\/132\",\"privilege\":[]}\r\n","headers":{"Connection":"keep-alive","Content-Length":"311","Content-Type":"text/plain","Date":"Sat, 29 Aug 2020 01:26:41 GMT"}}
+2020-08-29 09:23:46.122 [http-nio-80-exec-5] INFO  sample.api.oauth.WxOAuth2UserService - userAttributes:{"openid":"omWy-1AVHaKjKdUMPUCoi22xg8B4","nickname":"桑骏","sex":1,"language":"zh_CN","city":"卢湾","province":"上海","country":"中国","headimgurl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yvtKBMDQ1V9EEoTLpBsibdic1c4OUUW8RSdW2uyMrobLautfFspiatNByaFfy8YOhz4djWlNafiaXFeYd4xoDz5G0A/132","privilege":[]}
+2020-08-29 09:28:12.069 [http-nio-80-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=14A171C2F0BBEAB96EA9685C31574198
+if-none-match: "5f310463-fa9"
+if-modified-since: Mon, 10 Aug 2020 08:25:07 GMT
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:29:11.320 [http-nio-80-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Can't access the Github API without an access token] with root cause
+java.lang.IllegalStateException: Can't access the Github API without an access token
+	at sample.api.ApiBinding$2.intercept(ApiBinding.java:55)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:92)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:723)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:680)
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:332)
+	at sample.api.facebook.Facebook.getProfile(Facebook.java:15)
+	at sample.api.ApiBinding$$FastClassBySpringCGLIB$$de128043.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at sample.api.ApiBinding$$EnhancerBySpringCGLIB$$5ad3a7f3.getProfile(<generated>)
+	at sample.HomeController.home(HomeController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:206)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.doFilterInternal(WxOAuth2AuthorizationRequestRedirectFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-08-29 09:29:11.329 [http-nio-80-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/error':
+
+org.apache.catalina.core.ApplicationHttpRequest@28c9aa30
+
+servletPath:/error
+pathInfo:null
+headers: 
+host: www.yunxiangfu.life
+connection: keep-alive
+sec-ch-ua: nwjs 75
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2006090 MicroMessenger/7.0.4 Language/zh_CN webview/15986134382763622 webdebugger port/27196
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+sec-origin-policy: 0
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=14A171C2F0BBEAB96EA9685C31574198
+if-none-match: "5f310463-fa9"
+if-modified-since: Mon, 10 Aug 2020 08:25:07 GMT
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:32:06.390 [http-nio-80-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=6B25E9046BBB965249369E70D7D2BE0B
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:32:19.263 [http-nio-80-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+New HTTP session created: 0F716A525D0A8AE6759B9CF80B249628
+
+Call stack: 
+
+	at org.springframework.security.web.debug.Logger.info(Logger.java:44)
+	at org.springframework.security.web.debug.DebugRequestWrapper.getSession(DebugFilter.java:166)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:240)
+	at org.springframework.security.web.savedrequest.HttpSessionRequestCache.saveRequest(HttpSessionRequestCache.java:59)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.sendStartAuthentication(ExceptionTranslationFilter.java:211)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:185)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:141)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:206)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at sample.api.oauth.WxOAuth2AuthorizationRequestRedirectFilter.doFilterInternal(WxOAuth2AuthorizationRequestRedirectFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+************************************************************
+
+
+2020-08-29 09:32:19.278 [http-nio-80-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=0F716A525D0A8AE6759B9CF80B249628
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:32:23.418 [http-nio-80-exec-10] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/github':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/oauth2/authorization/github
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+referer: http://localhost/login
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=0F716A525D0A8AE6759B9CF80B249628
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:34:03.054 [http-nio-80-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/login
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=0F716A525D0A8AE6759B9CF80B249628
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:34:05.009 [http-nio-80-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/oauth2/authorization/github':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/oauth2/authorization/github
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+referer: http://localhost/login
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=0F716A525D0A8AE6759B9CF80B249628
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:35:36.544 [http-nio-80-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/login/oauth2/code/github?code=9801e31e5fac3c892426&state=72ZnfWFkKrbxlUHv_tSai4bEDGFTqQ75E_6mUOedVFk%3D':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/login/oauth2/code/github
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=0F716A525D0A8AE6759B9CF80B249628
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 09:35:36.545 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - in WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse .......................... 
+2020-08-29 09:35:36.581 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenRequest: {"wxAuthzGrant":{"code":{"value":"9801e31e5fac3c892426"},"redirectURI":"http://localhost/login/oauth2/code/github","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"authzGrant":{"code":{"value":"9801e31e5fac3c892426"},"redirectURI":"http://localhost/login/oauth2/code/github","type":{"requiresClientAuth":false,"requiresClientID":true,"requestParamNames":["code","redirect_uri","code_verifier"],"value":"authorization_code"}},"customParams":{},"clientAuth":{"secret":{"value":[102,102,52,56,54,48,99,49,56,56,57,102,99,48,101,48,56,48,51,48,101,101,100,102,57,101,54,54,49,101,48,101,99,101,49,53,49,102,54,99]},"method":{"value":"client_secret_basic"},"clientID":{"value":"Iv1.cb5f658969c1f0b5"}},"uri":"https://github.com/login/oauth/access_token"}
+2020-08-29 09:35:36.581 [http-nio-80-exec-7] INFO  sample.api.oauth.WxTokenRequest - to WxTokenRequest.toHTTPRequest .............. 
+2020-08-29 09:35:36.596 [http-nio-80-exec-7] INFO  sample.api.oauth.WxTokenRequest - params: {}
+2020-08-29 09:35:36.596 [http-nio-80-exec-7] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"9801e31e5fac3c892426","redirect_uri":"http://localhost/login/oauth2/code/github","grant_type":"authorization_code"}
+2020-08-29 09:35:36.596 [http-nio-80-exec-7] INFO  sample.api.oauth.WxTokenRequest - params: {"code":"9801e31e5fac3c892426","redirect_uri":"http://localhost/login/oauth2/code/github","grant_type":"authorization_code"}
+2020-08-29 09:35:36.597 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpRequest: {"method":"POST","url":"https://github.com/login/oauth/access_token","query":"code\u003d9801e31e5fac3c892426\u0026redirect_uri\u003dhttp%3A%2F%2Flocalhost%2Flogin%2Foauth2%2Fcode%2Fgithub\u0026grant_type\u003dauthorization_code","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{"Authorization":"Basic SXYxLmNiNWY2NTg5NjljMWYwYjU6ZmY0ODYwYzE4ODlmYzBlMDgwMzBlZWRmOWU2NjFlMGVjZTE1MWY2Yw\u003d\u003d","Content-Type":"application/x-www-form-urlencoded; charset\u003dUTF-8"}}
+2020-08-29 09:35:37.402 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - httpResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"44449dd9d39fec67ac1824c1700eb58b538a6e27\",\"expires_in\":28800,\"refresh_token\":\"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640\",\"refresh_token_expires_in\":15811200,\"token_type\":\"bearer\",\"scope\":\"\"}\r\n","headers":{"Cache-Control":"max-age\u003d0, private, must-revalidate","Content-Security-Policy":"default-src \u0027none\u0027; base-uri \u0027self\u0027; block-all-mixed-content; connect-src \u0027self\u0027 uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action \u0027self\u0027 github.com gist.github.com; frame-ancestors \u0027none\u0027; frame-src render.githubusercontent.com; img-src \u0027self\u0027 data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src \u0027self\u0027; media-src \u0027none\u0027; script-src github.githubassets.com; style-src \u0027unsafe-inline\u0027 github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","Content-Type":"application/json; charset\u003dutf-8","Date":"Sat, 29 Aug 2020 01:38:32 GMT","ETag":"W/\"0f2643b0bfc71295f7ce42923addfc8d\"","Expect-CT":"max-age\u003d2592000, report-uri\u003d\"https://api.github.com/_private/browser/errors\"","Referrer-Policy":"origin-when-cross-origin, strict-origin-when-cross-origin","Server":"GitHub.com","Status":"200 OK","Strict-Transport-Security":"max-age\u003d31536000; includeSubdomains; preload","Transfer-Encoding":"chunked","Vary":"Accept-Encoding","X-Content-Type-Options":"nosniff","X-Frame-Options":"deny","X-GitHub-Request-Id":"30C0:2603:84BDF7:B66A7C:5F49B198","X-XSS-Protection":"1; mode\u003dblock"}}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(HTTPResponse) ................. {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"44449dd9d39fec67ac1824c1700eb58b538a6e27\",\"expires_in\":28800,\"refresh_token\":\"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640\",\"refresh_token_expires_in\":15811200,\"token_type\":\"bearer\",\"scope\":\"\"}\r\n","headers":{"Cache-Control":"max-age\u003d0, private, must-revalidate","Content-Security-Policy":"default-src \u0027none\u0027; base-uri \u0027self\u0027; block-all-mixed-content; connect-src \u0027self\u0027 uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action \u0027self\u0027 github.com gist.github.com; frame-ancestors \u0027none\u0027; frame-src render.githubusercontent.com; img-src \u0027self\u0027 data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src \u0027self\u0027; media-src \u0027none\u0027; script-src github.githubassets.com; style-src \u0027unsafe-inline\u0027 github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","Content-Type":"application/json; charset\u003dutf-8","Date":"Sat, 29 Aug 2020 01:38:32 GMT","ETag":"W/\"0f2643b0bfc71295f7ce42923addfc8d\"","Expect-CT":"max-age\u003d2592000, report-uri\u003d\"https://api.github.com/_private/browser/errors\"","Referrer-Policy":"origin-when-cross-origin, strict-origin-when-cross-origin","Server":"GitHub.com","Status":"200 OK","Strict-Transport-Security":"max-age\u003d31536000; includeSubdomains; preload","Transfer-Encoding":"chunked","Vary":"Accept-Encoding","X-Content-Type-Options":"nosniff","X-Frame-Options":"deny","X-GitHub-Request-Id":"30C0:2603:84BDF7:B66A7C:5F49B198","X-XSS-Protection":"1; mode\u003dblock"}}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.api.oauth.WxAccessTokenResponse - jsonObject:{"access_token":"44449dd9d39fec67ac1824c1700eb58b538a6e27","refresh_token_expires_in":15811200,"refresh_token":"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640","scope":"","token_type":"bearer","expires_in":28800}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.api.oauth.WxAccessTokenResponse - WxAccessTokenResponse.parse(JSONObject) ................. {"access_token":"44449dd9d39fec67ac1824c1700eb58b538a6e27","refresh_token_expires_in":15811200,"refresh_token":"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640","scope":"","token_type":"bearer","expires_in":28800}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  sample.api.oauth.WxAccessToken - WxTokens.parse:{"access_token":"44449dd9d39fec67ac1824c1700eb58b538a6e27","refresh_token_expires_in":15811200,"refresh_token":"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640","scope":"","token_type":"bearer","expires_in":28800}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  sample.api.oauth.WxAccessToken - WxAccessToken.parse:{"access_token":"44449dd9d39fec67ac1824c1700eb58b538a6e27","refresh_token_expires_in":15811200,"refresh_token":"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640","scope":"","token_type":"bearer","expires_in":28800}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  sample.api.oauth.WxAccessToken - accessTokenValue:44449dd9d39fec67ac1824c1700eb58b538a6e27
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  sample.api.oauth.WxAccessToken - accessToken:{"type":{"value":"Bearer"},"lifetime":28800,"scope":[],"value":"44449dd9d39fec67ac1824c1700eb58b538a6e27"}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  sample.api.oauth.WxAccessToken - refreshToken:{"value":"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640"}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - tokenResponse: {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"44449dd9d39fec67ac1824c1700eb58b538a6e27\",\"expires_in\":28800,\"refresh_token\":\"r1.511af69c685bc460f89b83b50b9319e8b287dedea0bcf18a09829da918507912599bab2e01758640\",\"refresh_token_expires_in\":15811200,\"token_type\":\"bearer\",\"scope\":\"\"}\r\n","headers":{"Cache-Control":"max-age\u003d0, private, must-revalidate","Content-Security-Policy":"default-src \u0027none\u0027; base-uri \u0027self\u0027; block-all-mixed-content; connect-src \u0027self\u0027 uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action \u0027self\u0027 github.com gist.github.com; frame-ancestors \u0027none\u0027; frame-src render.githubusercontent.com; img-src \u0027self\u0027 data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src \u0027self\u0027; media-src \u0027none\u0027; script-src github.githubassets.com; style-src \u0027unsafe-inline\u0027 github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","Content-Type":"application/json; charset\u003dutf-8","Date":"Sat, 29 Aug 2020 01:38:32 GMT","ETag":"W/\"0f2643b0bfc71295f7ce42923addfc8d\"","Expect-CT":"max-age\u003d2592000, report-uri\u003d\"https://api.github.com/_private/browser/errors\"","Referrer-Policy":"origin-when-cross-origin, strict-origin-when-cross-origin","Server":"GitHub.com","Status":"200 OK","Strict-Transport-Security":"max-age\u003d31536000; includeSubdomains; preload","Transfer-Encoding":"chunked","Vary":"Accept-Encoding","X-Content-Type-Options":"nosniff","X-Frame-Options":"deny","X-GitHub-Request-Id":"30C0:2603:84BDF7:B66A7C:5F49B198","X-XSS-Protection":"1; mode\u003dblock"}}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - wxAccessToken: {"type":{"value":"Bearer"},"lifetime":28800,"scope":[],"value":"44449dd9d39fec67ac1824c1700eb58b538a6e27"}
+2020-08-29 09:35:37.403 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusAuthorizationCodeTokenResponseClient - out WxNimbusAuthorizationCodeTokenResponseClient.getTokenResponse:{"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["read:user"],"tokenValue":"44449dd9d39fec67ac1824c1700eb58b538a6e27","issuedAt":{"seconds":1598664937,"nanos":403000000},"expiresAt":{"seconds":1598693737,"nanos":403000000}},"additionalParameters":{"refresh_token_expires_in":15811200}}
+2020-08-29 09:35:37.404 [http-nio-80-exec-7] INFO  sample.api.oauth.WxOAuth2UserService - WxOAuth2UserService.loadUser:{"clientRegistration":{"registrationId":"github","clientId":"Iv1.cb5f658969c1f0b5","clientSecret":"ff4860c1889fc0e08030eedf9e661e0ece151f6c","clientAuthenticationMethod":{"value":"basic"},"authorizationGrantType":{"value":"authorization_code"},"redirectUriTemplate":"http://localhost/login/oauth2/code/github","scopes":["read:user"],"providerDetails":{"authorizationUri":"https://github.com/login/oauth/authorize","tokenUri":"https://github.com/login/oauth/access_token","userInfoEndpoint":{"uri":"https://api.github.com/user","userNameAttributeName":"id"}},"clientName":"GitHub"},"accessToken":{"tokenType":{"value":"Bearer"},"scopes":["read:user"],"tokenValue":"44449dd9d39fec67ac1824c1700eb58b538a6e27","issuedAt":{"seconds":1598664937,"nanos":403000000},"expiresAt":{"seconds":1598693737,"nanos":403000000}}}
+2020-08-29 09:35:37.404 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.userInfoRequest:{"httpMethod":"GET","accessToken":{"type":{"value":"Bearer"},"lifetime":0,"value":"44449dd9d39fec67ac1824c1700eb58b538a6e27"},"uri":"https://api.github.com/user"}
+2020-08-29 09:35:37.404 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpRequest:{"method":"GET","url":"https://api.github.com/user","query":"access_token\u003d44449dd9d39fec67ac1824c1700eb58b538a6e27\u0026openid\u003d\u0026lang\u003dzh_CN","connectTimeout":0,"readTimeout":0,"followRedirects":true,"headers":{}}
+2020-08-29 09:35:38.328 [http-nio-80-exec-7] INFO  s.a.o.WxNimbusUserInfoResponseClient - getUserInfoResponse.httpResponse:{"statusCode":200,"statusMessage":"OK","content":"{\"login\":\"sangyuruo\",\"id\":12286613,\"node_id\":\"MDQ6VXNlcjEyMjg2NjEz\",\"avatar_url\":\"https://avatars3.githubusercontent.com/u/12286613?v\u003d4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/sangyuruo\",\"html_url\":\"https://github.com/sangyuruo\",\"followers_url\":\"https://api.github.com/users/sangyuruo/followers\",\"following_url\":\"https://api.github.com/users/sangyuruo/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/sangyuruo/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/sangyuruo/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/sangyuruo/subscriptions\",\"organizations_url\":\"https://api.github.com/users/sangyuruo/orgs\",\"repos_url\":\"https://api.github.com/users/sangyuruo/repos\",\"events_url\":\"https://api.github.com/users/sangyuruo/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/sangyuruo/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"sangjun\",\"company\":\"suntec\",\"blog\":\"\",\"location\":\"shanghai\",\"email\":\"sangyuruo@gmail.com\",\"hireable\":null,\"bio\":null,\"twitter_username\":null,\"public_repos\":171,\"public_gists\":0,\"followers\":0,\"following\":1,\"created_at\":\"2015-05-07T02:58:59Z\",\"updated_at\":\"2020-08-26T15:12:32Z\"}\r\n","headers":{"Access-Control-Allow-Origin":"*","Access-Control-Expose-Headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","Cache-Control":"private, max-age\u003d60, s-maxage\u003d60","Content-Length":"1205","Content-Security-Policy":"default-src \u0027none\u0027","Content-Type":"application/json; charset\u003dutf-8","Date":"Sat, 29 Aug 2020 01:38:33 GMT","ETag":"\"f78e6302a3d67e413132615f69589c53\"","Last-Modified":"Wed, 26 Aug 2020 15:12:32 GMT","Referrer-Policy":"origin-when-cross-origin, strict-origin-when-cross-origin","Server":"GitHub.com","Status":"200 OK","Strict-Transport-Security":"max-age\u003d31536000; includeSubdomains; preload","Vary":"Accept-Encoding","X-Accepted-OAuth-Scopes":"","X-Content-Type-Options":"nosniff","X-Frame-Options":"deny","X-GitHub-Media-Type":"github.v3","X-GitHub-Request-Id":"3B80:2825:5263F4:6B08BD:5F49B199","X-OAuth-Client-Id":"Iv1.cb5f658969c1f0b5","X-OAuth-Scopes":"","X-RateLimit-Limit":"5000","X-RateLimit-Remaining":"4999","X-RateLimit-Reset":"1598668713","X-XSS-Protection":"1; mode\u003dblock"}}
+2020-08-29 09:35:38.329 [http-nio-80-exec-7] INFO  sample.api.oauth.WxOAuth2UserService - userAttributes:{"login":"sangyuruo","id":12286613,"node_id":"MDQ6VXNlcjEyMjg2NjEz","avatar_url":"https://avatars3.githubusercontent.com/u/12286613?v\u003d4","gravatar_id":"","url":"https://api.github.com/users/sangyuruo","html_url":"https://github.com/sangyuruo","followers_url":"https://api.github.com/users/sangyuruo/followers","following_url":"https://api.github.com/users/sangyuruo/following{/other_user}","gists_url":"https://api.github.com/users/sangyuruo/gists{/gist_id}","starred_url":"https://api.github.com/users/sangyuruo/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sangyuruo/subscriptions","organizations_url":"https://api.github.com/users/sangyuruo/orgs","repos_url":"https://api.github.com/users/sangyuruo/repos","events_url":"https://api.github.com/users/sangyuruo/events{/privacy}","received_events_url":"https://api.github.com/users/sangyuruo/received_events","type":"User","site_admin":false,"name":"sangjun","company":"suntec","blog":"","location":"shanghai","email":"sangyuruo@gmail.com","public_repos":171,"public_gists":0,"followers":0,"following":1,"created_at":"2015-05-07T02:58:59Z","updated_at":"2020-08-26T15:12:32Z"}
+2020-08-29 09:35:38.334 [http-nio-80-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/':
+
+org.apache.catalina.connector.RequestFacade@5c96e7b0
+
+servletPath:/
+pathInfo:null
+headers: 
+host: localhost
+connection: keep-alive
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+cookie: JSESSIONID=9FDA31AF93051F935411C3DD6E9B7D55
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  CsrfFilter
+  LogoutFilter
+  WxOAuth2AuthorizationRequestRedirectFilter
+  OAuth2AuthorizationRequestRedirectFilter
+  OAuth2LoginAuthenticationFilter
+  DefaultLoginPageGeneratingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+
+2020-08-29 11:06:21.920 [Thread-25] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cf6f1d3: startup date [Sat Aug 29 08:59:46 CST 2020]; root of context hierarchy
+2020-08-29 11:06:21.976 [Thread-25] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

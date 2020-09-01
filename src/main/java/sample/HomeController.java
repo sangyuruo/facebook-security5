@@ -1,27 +1,31 @@
 package sample;
 
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import sample.api.facebook.Facebook;
+import sample.api.ApiBinding;
 
 @Controller
 public class HomeController {
 
-	private Facebook facebook;
+    private ApiBinding apiBinding;
+    private static Gson gson = new Gson();
 
-	@Autowired
-	public HomeController(Facebook facebook) {
-		this.facebook = facebook;
-	}
-	
-	@GetMapping("/")
-	public String home(Model model) {
-		model.addAttribute("profile", facebook.getProfile());
-		model.addAttribute("feed", facebook.getFeed());
-		return "home";
-	}
-	
+    @Autowired
+    public HomeController(ApiBinding apiBinding) {
+        this.apiBinding = apiBinding;
+    }
+
+    @GetMapping("/")
+    public String home(Model model) {
+        String profile = gson.toJson(apiBinding.getProfile());
+        System.out.println(profile);
+
+        model.addAttribute("profile", apiBinding.getProfile());
+        model.addAttribute("feed", apiBinding.getFeed());
+        return "home";
+    }
+
 }

@@ -1,0 +1,7 @@
+accessToken 接口返回成功：
+ {"statusCode":200,"statusMessage":"OK","content":"{\"access_token\":\"36_0XCPwLv6NHcITtr-r6TDNtuCEPBYqVM7dy9VBGE-4795SVT1oaZD2j9O5vFpEwPa9nBcAVVg9gq44GMg7l5s5w\",\"expires_in\":7200,\"refresh_token\":\"36_VlF4bf6xZ3z4c3RAq1LK-AkXPVt7BAiaSVLcg1oO96RArsc8lHxLFE_ncswTHI6Q8RtL63jjGzoV9nPQ-I6u_w\",\"openid\":\"omWy-1AVHaKjKdUMPUCoi22xg8B4\",\"scope\":\"snsapi_userinfo\"}\r\n","headers":{"Connection":"keep-alive","Content-Length":"300","Content-Type":"text/plain","Date":"Fri, 28 Aug 2020 06:13:31 GMT"}}
+
+页面显示错误：
+ Your login attempt was not successful, try again.<br/><br/>Reason: [invalid_token_response]
+ An error occurred parsing the Access Token response:
+ The HTTP Content-Type header must be application/json; charset=UTF-8</p><h3>Login with OAuth 2.0</h3><table>

@@ -1,9 +1,33 @@
+server:
+  port: 80
 spring:
   security:
     oauth2:
       client:
+        provider:
+          wechatmp:
+            authorization-uri: https://open.weixin.qq.com/connect/oauth2/authorize
+            token-uri: https://api.weixin.qq.com/sns/oauth2/access_token
+            user-info-uri: https://api.weixin.qq.com/sns/userinfo
+            user-name-attribute: openid
+            jwk-set-uri:
         registration:
           facebook:
             client-id: -- YOUR FACEBOOK CLIENT ID --
             client-secret: -- YOUR FACEBOOK CLIENT SECRET --
             scope: user_posts
+          github:
+            client-id: Iv1.cb5f658969c1f0b5
+            client-secret: ff4860c1889fc0e08030eedf9e661e0ece151f6c
+            redirect-uri-template: http://localhost/login/oauth2/code/github
+            scope: read:user
+          wechatmp:
+            ## [微信公众平台appId]
+            client-id: wx1337188be8d65db4
+            ## [微信公众平台appSecret]
+            client-secret: 0cb133e63df0010c81cb2a316cbe3707
+            scope: snsapi_userinfo
+            authorization-grant-type: authorization_code
+            client-authentication-method: post
+            redirect-uri-template: http://www.yunxiangfu.life/login/oauth2/code/wechatmp
+            client-name: wx

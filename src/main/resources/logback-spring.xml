@@ -1,0 +1,61 @@
+<configuration>
+	<property name="APP_HOME" value="logs" />
+	<if condition='isNull("LOG_DIR")'>
+		<then>
+			<if condition='isDefined("APP_HOME")'>
+				<then>
+					<property name="LOG_DIR" value="${APP_HOME}" />
+				</then>
+				<else>
+					<property name="LOG_DIR" value="logs" />
+				</else>
+			</if>
+		</then>
+	</if>
+	
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+      <appender name="CP-TASK-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_DIR}/cp-task.log</file>
+
+         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>${LOG_DIR}/cp-task.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+
+			<!-- keep 30 days' worth of history capped at 3GB total size -->
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+
+		</rollingPolicy>
+		
+
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework.security" level="INFO" />
+	<logger name="org.springframework.social" level="INFO" />
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.hibernate" level="WARN" />
+	<logger name="org.mybatis" level="WARN" />
+	<logger name="org.apache" level="WARN" />
+	<logger name="org" level="WARN" />
+	<logger name="com.google" level="WARN" />
+	<logger name="com.alibaba" level="WARN" />
+	
+    <root level="INFO">
+		<appender-ref ref="CP-TASK-LOG" />
+	</root>
+	
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root> 
+	
+
+</configuration>

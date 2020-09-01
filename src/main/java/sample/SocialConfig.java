@@ -8,26 +8,32 @@ import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.web.context.annotation.RequestScope;
-
+import sample.api.ApiBinding;
 import sample.api.facebook.Facebook;
+import sample.api.github.Github;
 
 @Configuration
 public class SocialConfig {
 
-	@Bean
-	@RequestScope
-	public Facebook facebook(OAuth2AuthorizedClientService clientService) {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		String accessToken = null;
-		if (authentication.getClass().isAssignableFrom(OAuth2AuthenticationToken.class)) {
-			OAuth2AuthenticationToken oauthToken = (OAuth2AuthenticationToken) authentication;
-			String clientRegistrationId = oauthToken.getAuthorizedClientRegistrationId();
-			if (clientRegistrationId.equals("facebook")) {
-				OAuth2AuthorizedClient client = clientService.loadAuthorizedClient(clientRegistrationId, oauthToken.getName());
-				accessToken = client.getAccessToken().getTokenValue();
-			}
-		}
-		return new Facebook(accessToken);
-	}
-	
+    @Bean
+    @RequestScope
+    public ApiBinding apiBinding(OAuth2AuthorizedClientService clientService) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String accessToken = null;
+        if (authentication.getClass().isAssignableFrom(OAuth2AuthenticationToken.class)) {
+            OAuth2AuthenticationToken oauthToken = (OAuth2AuthenticationToken) authentication;
+            String clientRegistrationId = oauthToken.getAuthorizedClientRegistrationId();
+            if (clientRegistrationId.equals("facebook")) {
+                OAuth2AuthorizedClient client = clientService.loadAuthorizedClient(clientRegistrationId, oauthToken.getName());
+                accessToken = client.getAccessToken().getTokenValue();
+                return new Facebook(accessToken);
+            } else if (clientRegistrationId.equals("github")) {
+                OAuth2AuthorizedClient client = clientService.loadAuthorizedClient(clientRegistrationId, oauthToken.getName());
+                accessToken = client.getAccessToken().getTokenValue();
+                return new Github(accessToken);
+            }
+        }
+        return new Facebook(accessToken);
+    }
+
 }
